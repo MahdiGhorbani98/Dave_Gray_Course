@@ -38,45 +38,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // Serve static files
-app.use(express.static(path.join(__dirname, "/public")));
+app.use("/", express.static(path.join(__dirname, "/public")));
+app.use("/subdir", express.static(path.join(__dirname, "/public")));
 
-// Routes
-app.get(`^/$|/index(.html)?`, (req, res) => {
-  res.sendFile(path.join(__dirname, "views", "index.html"));
-});
-app.get("/new-page(.html)?", (req, res) => {
-  res.sendFile(path.join(__dirname, "views", "new-page.html"));
-});
-app.get("/old-page(.html)?", (req, res) => {
-  res.redirect(301, "/new-page.html");
-});
-
-app.get(
-  `/hello(.html)?`,
-  (req, res, next) => {
-    console.log("Attempted to load hello.html");
-    next();
-  },
-  (req, res) => {
-    res.send("Hello World!");
-  }
-);
-
-// Chain route
-app.get("/chain(.html)?", [
-  (req, res, next) => {
-    console.log("one");
-    next();
-  },
-  (req, res, next) => {
-    console.log("two");
-    next();
-  },
-  (req, res) => {
-    console.log("three");
-    res.send("Finished!");
-  },
-]);
+// routes
+app.use("/", require("./routers/root"));
+app.use("/subdir", require("./routers/subdir"));
+app.use("/employees", require("./routers/api/employees"));
 
 // Catch-all 404
 app.all(`*`, (req, res) => {

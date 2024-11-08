@@ -2,3 +2,9 @@
 2024-11-08	14:44:44	fb0c99fe-e5db-4dc1-88d5-27a1527ff04d	Error: Not allowed by CORS!
 2024-11-08	15:03:40	6241d37a-a9a0-4bf0-9557-197a07f6cb18	Error: Not allowed by CORS!
 2024-11-08	15:11:20	7b63ad98-8ae0-405e-824b-aa832e80f20d	Error: Not allowed by CORS!
+2024-11-08	19:31:49	beb900c5-bb34-4a9f-ab3a-035e1139882b	Error: ENOENT: no such file or directory, stat 'G:\WEB\NodeJs\Dave_Gray_Course\routers\views\index.html'
+2024-11-08	20:20:05	ad092b62-4b1f-482d-9abe-4e7ab001c4e7	SyntaxError: Expected property name or '}' in JSON at position 1
+2024-11-08	20:20:44	fde3ff6f-19e4-4471-b1e2-aefa542d58b7	SyntaxError: Expected property name or '}' in JSON at position 1
+2024-11-08	20:21:24	96a70b3b-b5d4-4fe1-a5db-152d175feffa	SyntaxError: Expected property name or '}' in JSON at position 1
+2024-11-08	20:22:12	7a2f12ce-762b-465d-a7d6-cda5ba1f2e75	SyntaxError: Expected property name or '}' in JSON at position 1
+2024-11-08	20:22:20	3af5692a-446c-4a55-8768-88d899ce5131	SyntaxError: Expected property name or '}' in JSON at position 1
