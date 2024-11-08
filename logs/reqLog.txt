@@ -81,3 +81,17 @@
 2024-11-08	20:23:38	5f154a29-9cfb-465a-bbff-b9b13ccdb5f4	POST	undefined	/employees
 2024-11-08	20:24:56	6441359f-3328-4537-9fb3-e2b12f4b4347	PUT	undefined	/employees
 2024-11-08	20:25:57	c4a01249-44d2-4be0-a887-6a576cc94bf9	DELETE	undefined	/employees
+2024-11-09	00:33:47	174d7ed3-b56a-4643-97f6-fd0b8ee9a160	GET	undefined	/employees
+2024-11-09	00:33:50	3b5aca97-eca2-4e56-b140-10e7246b4065	GET	undefined	/employees/1
+2024-11-09	00:33:52	fb6b3096-2ea1-46b2-940f-b9b1a761b8e3	POST	undefined	/employees
+2024-11-09	00:34:10	3f0bcc29-4daf-4226-b04d-b8fa5c93b71f	GET	undefined	/employees
+2024-11-09	00:39:00	f34b0780-1c92-4b7a-812b-8687c8bf47ab	GET	undefined	/employees
+2024-11-09	00:55:55	4e31336b-2a3e-4ac9-afd5-6154e6c13682	GET	undefined	/employees
+2024-11-09	00:55:59	da17e2f5-34a6-4160-a247-5d850c201cfa	GET	undefined	/employees/1
+2024-11-09	00:56:04	6fed14cb-172b-4e7f-8bbd-e762812a336f	POST	undefined	/employees
+2024-11-09	00:56:08	b1d814f6-64d3-4fd1-9ceb-cc03c06a572b	GET	undefined	/employees
+2024-11-09	00:56:18	6ed2ba16-a6e2-47b2-aa98-5e7161abb00a	PUT	undefined	/employees
+2024-11-09	00:56:22	c0106c24-739a-451d-9e36-4b547e3a80e7	DELETE	undefined	/employees
+2024-11-09	00:56:26	a04f3af3-07eb-4c56-8eb7-c9a1aef13d5f	GET	undefined	/employees
+2024-11-09	00:56:31	279c6a1e-9dc2-44dd-b118-b9b94a1f59c0	POST	undefined	/employees
+2024-11-09	00:56:38	72ff3421-da9c-4bab-953c-58e6ec2cd0d8	DELETE	undefined	/employees
