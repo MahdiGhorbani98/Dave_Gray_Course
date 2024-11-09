@@ -25,9 +25,11 @@ app.use("/", express.static(path.join(__dirname, "/public")));
 app.use("/subdir", express.static(path.join(__dirname, "/public")));
 
 // routes
-app.use("/", require("./routers/root"));
-app.use("/subdir", require("./routers/subdir"));
-app.use("/employees", require("./routers/api/employees"));
+app.use("/", require("./routes/root.js"));
+app.use("/register", require("./routes/register.js"));
+app.use("/auth", require("./routes/auth.js"));
+app.use("/subdir", require("./routes/subdir.js"));
+app.use("/employees", require("./routes/api/employees.js"));
 
 // Catch-all 404
 app.all(`*`, (req, res) => {
