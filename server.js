@@ -6,6 +6,8 @@ const cors = require("cors");
 const corsOptions = require("./config/corsOptions");
 const app = express();
 const path = require("path");
+const verifyJWT = require("./middleware/verifyJWT");
+const cookieParser = require("cookie-parser");
 const PORT = process.env.PORT || 3500;
 
 // ? app.use() is a middleware function
@@ -20,6 +22,9 @@ app.use(cors(corsOptions));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+// middleware for cookies
+app.use(cookieParser());
+
 // Serve static files
 app.use("/", express.static(path.join(__dirname, "/public")));
 app.use("/subdir", express.static(path.join(__dirname, "/public")));
@@ -28,7 +33,10 @@ app.use("/subdir", express.static(path.join(__dirname, "/public")));
 app.use("/", require("./routes/root.js"));
 app.use("/register", require("./routes/register.js"));
 app.use("/auth", require("./routes/auth.js"));
+app.use("/refresh", require("./routes/refresh"));
 app.use("/subdir", require("./routes/subdir.js"));
+
+app.use(verifyJWT);
 app.use("/employees", require("./routes/api/employees.js"));
 
 // Catch-all 404
