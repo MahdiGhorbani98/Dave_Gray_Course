@@ -175,3 +175,9 @@
 2024-11-10	18:33:09	78036986-3912-4a0f-991d-9147e2a3dad9	GET	undefined	/employees
 2024-11-10	18:33:21	1fbe46af-7bc7-45ee-84fa-a8abb7ea7358	GET	undefined	/employees
 2024-11-10	18:35:55	17873b7b-9b61-418c-ae73-b1e44296d131	GET	undefined	/refresh
+2024-11-10	19:46:06	72888af8-a3d5-424a-82e8-4ac066c5f2d2	POST	undefined	/auth
+2024-11-10	19:46:56	b2417258-fc66-44a9-8429-72bdaf4fe3fd	GET	undefined	/logout
+2024-11-10	19:47:26	5d5fc406-065a-4894-aaa1-4040e5bab0fe	GET	undefined	/refresh
+2024-11-10	19:48:04	d86138e8-ae50-48fc-accb-a1bf604168ce	GET	undefined	/refresh
+2024-11-10	19:48:46	55ceb708-31d9-4fc7-a703-5e774cdf837e	POST	undefined	/auth
+2024-11-10	19:48:54	984072c8-34bb-47ad-b349-eb461155d3ef	GET	undefined	/refresh
