@@ -23,10 +23,16 @@ const handleLogin = async (req, res) => {
 
   // evaluate password
   const match = await bcrypt.compare(pwd, foundUser.password);
+  const roles = Object.values(foundUser.roles);
   if (match) {
     // create JWTs
     const accessToken = jwt.sign(
-      { username: foundUser.username },
+      {
+        UserInfo: {
+          username: foundUser.username,
+          roles: roles,
+        },
+      },
       process.env.ACCESS_TOKEN_SECRET,
       {
         expiresIn: "30s",
@@ -53,7 +59,7 @@ const handleLogin = async (req, res) => {
     res.cookie("jwt", refreshToken, {
       httpOnly: true,
       sameSite: "None",
-      secure: true,
+      secure: true, // ! comment it for Thunder Client but uncomment for production and Chrome
       maxAge: 24 * 60 * 60 * 1000,
     });
     res.json({ accessToken });
