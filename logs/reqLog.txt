@@ -200,3 +200,5 @@
 2024-11-11	13:48:05	c3dbc138-11df-454c-a4bf-a571990d1068	POST	undefined	/auth
 2024-11-11	13:48:11	b369f9a0-c4d0-4919-b20d-e02999687609	POST	undefined	/auth
 2024-11-11	13:48:20	46a7a3bd-4d05-4f0a-beaa-9dfe5c5601f3	DELETE	undefined	/employees
+2024-11-12	17:34:42	a3ec9769-c950-4718-ae4b-1861a84bdedc	POST	undefined	/register
+2024-11-12	17:34:51	c8c03ec4-f739-4530-8574-3c88f117f9aa	POST	undefined	/register

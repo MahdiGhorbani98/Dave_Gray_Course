@@ -1,4 +1,5 @@
 /* eslint-disable no-undef */
+require("dotenv").config();
 const express = require("express");
 const { logger } = require("./middleware/logEvents");
 const errorHandler = require("./middleware/errorHandler.js");
@@ -9,7 +10,12 @@ const path = require("path");
 const verifyJWT = require("./middleware/verifyJWT");
 const credential = require("./middleware/credentials");
 const cookieParser = require("cookie-parser");
+const mongoose = require("mongoose");
+const connectDB = require("./config/dbConn");
 const PORT = process.env.PORT || 3500;
+
+// Connect to mongoDB
+connectDB();
 
 // ? app.use() is a middleware function
 
@@ -58,6 +64,9 @@ app.all(`*`, (req, res) => {
 // General error handler
 app.use(errorHandler);
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+mongoose.connection.once("open", () => {
+  console.log("Connected to mongoDB");
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
 });
