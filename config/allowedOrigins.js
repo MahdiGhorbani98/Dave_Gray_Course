@@ -4,6 +4,7 @@ const allowedOrigins = [
   "http://localhost:3500",
   "http://localhost",
   "http://127.0.0.1",
+  "https://dave-gray-course-y2l8.vercel.app",
 ];
 
 module.exports = allowedOrigins;
