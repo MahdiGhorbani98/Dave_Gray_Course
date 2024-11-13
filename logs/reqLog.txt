@@ -269,3 +269,7 @@
 2024-11-13	17:17:13	c221d3a8-17fc-4344-924b-cc20c49cc076	GET	undefined	/
 2024-11-13	17:17:13	e1e8b4ac-1d28-4e1e-ba14-9e23c68ab631	GET	undefined	/css/style.css
 2024-11-13	17:17:16	8cce5978-8df8-488b-8a7a-daba75863ef4	GET	undefined	/favicon.ico
+2024-11-13	17:44:20	d6050ae5-984e-42aa-9e38-18eb291cb234	GET	undefined	/
+2024-11-13	17:44:20	d710253c-12a4-4437-839c-782d78b2b12b	GET	undefined	/css/style.css
+2024-11-13	17:44:22	b9ae5cca-05e1-41c4-8816-9bd8991ae553	GET	undefined	/favicon.ico
+2024-11-13	17:44:36	cad429b6-d5ac-44e5-a144-aa29cfd94a7e	GET	undefined	/employees
