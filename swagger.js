@@ -9,8 +9,22 @@ const swaggerOptions = {
       version: "1.0.0",
       description: "API documentation for Employee Management",
     },
+    components: {
+      securitySchemes: {
+        bearerAuth: {
+          type: "http",
+          scheme: "bearer",
+          bearerFormat: "JWT", // optional, can specify JWT here
+        },
+      },
+    },
+    // security: [
+    //   {
+    //     bearerAuth: [], // Apply this security globally
+    //   },
+    // ],
   },
-  apis: ["./routes/api/*.js"], // Path to the API docs
+  apis: ["./routes/**/*.js"],
 };
 
 const swaggerDocs = swaggerJsDoc(swaggerOptions);

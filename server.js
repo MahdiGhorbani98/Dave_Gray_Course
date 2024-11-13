@@ -12,6 +12,7 @@ const credential = require("./middleware/credentials");
 const cookieParser = require("cookie-parser");
 const mongoose = require("mongoose");
 const connectDB = require("./config/dbConn");
+const { swaggerUi, swaggerDocs } = require("./swagger");
 const PORT = process.env.PORT || 3500;
 
 // Swagger docs
@@ -41,7 +42,6 @@ app.use(cookieParser());
 
 // Serve static files
 app.use("/", express.static(path.join(__dirname, "/public")));
-app.use("/subdir", express.static(path.join(__dirname, "/public")));
 
 // routes
 app.use("/", require("./routes/root.js"));
@@ -49,7 +49,6 @@ app.use("/register", require("./routes/register.js"));
 app.use("/auth", require("./routes/auth.js"));
 app.use("/refresh", require("./routes/refresh"));
 app.use("/logout", require("./routes/logout"));
-app.use("/subdir", require("./routes/subdir.js"));
 
 app.use(verifyJWT);
 app.use("/employees", require("./routes/api/employees.js"));
