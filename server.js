@@ -16,8 +16,14 @@ const { swaggerUi, swaggerDocs } = require("./swagger");
 const PORT = process.env.PORT || 3500;
 
 // Swagger docs
-app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
-
+app.use(
+  "/api-docs",
+  swaggerUi.serve,
+  swaggerUi.setup(swaggerDocs, {
+    customCssUrl:
+      "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.1.0/swagger-ui.css",
+  })
+);
 // Connect to mongoDB
 connectDB();
 
