@@ -21,9 +21,10 @@ app.use(
   swaggerUi.serve,
   swaggerUi.setup(swaggerDocs, {
     customCssUrl:
-      "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.1.0/swagger-ui.css",
+      "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.6.2/swagger-ui.js",
   })
 );
+
 // Connect to mongoDB
 connectDB();
 
