@@ -20,8 +20,7 @@ app.use(
   "/api-docs",
   swaggerUi.serve,
   swaggerUi.setup(swaggerDocs, {
-    customCssUrl:
-      "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.6.2/swagger-ui.js",
+    customCssUrl: "/swagger-ui.css", // path relative to static file location
   })
 );
 

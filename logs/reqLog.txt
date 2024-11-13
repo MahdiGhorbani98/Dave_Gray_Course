@@ -273,3 +273,4 @@
 2024-11-13	17:44:20	d710253c-12a4-4437-839c-782d78b2b12b	GET	undefined	/css/style.css
 2024-11-13	17:44:22	b9ae5cca-05e1-41c4-8816-9bd8991ae553	GET	undefined	/favicon.ico
 2024-11-13	17:44:36	cad429b6-d5ac-44e5-a144-aa29cfd94a7e	GET	undefined	/employees
+2024-11-13	18:02:11	fb30fa6b-4be0-4a42-865a-8da7653e5256	GET	undefined	/swagger-ui.css
