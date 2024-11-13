@@ -266,3 +266,6 @@
 2024-11-13	17:06:23	f5072740-9371-47f1-87b3-7c6a1be606dc	GET	undefined	/refresh
 2024-11-13	17:07:07	97bad24e-2a05-424b-aad6-dc95410aa5ac	GET	undefined	/refresh
 2024-11-13	17:08:17	87259e8f-d33c-4a9e-bdff-b499bbefb7db	GET	undefined	/logout
+2024-11-13	17:17:13	c221d3a8-17fc-4344-924b-cc20c49cc076	GET	undefined	/
+2024-11-13	17:17:13	e1e8b4ac-1d28-4e1e-ba14-9e23c68ab631	GET	undefined	/css/style.css
+2024-11-13	17:17:16	8cce5978-8df8-488b-8a7a-daba75863ef4	GET	undefined	/favicon.ico
